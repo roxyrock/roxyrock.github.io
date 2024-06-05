@@ -6,109 +6,105 @@
     <meta charset="utf-8">
     <style>
         /* Global styles */
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 7vw;
+            margin-top: 0;
+        }
+
         a {
             color: #f00;
         }
 
-        html, body{
-            margin:0;
-            padding:0;
-        }
-        h1{
-            font-size:7vw;
-            margin-top:0;
-        }
-        
-        
 
         /* Social styles */
         .social-link {
             background: rgba(150, 150, 150, 0.5);
-            border-radius:99px;
-            color: blue;
-            display:inline-block;
-            height:36px;
-            width:36px;            
-        }
-        .social-list{
-            list-style:none;
-            padding:0;
-            text-align:center;
-        }
-        .social-list > li{
-            display:inline-block;
-            margin:0 0.5em;
-        }
-        
-        /* Bio styles */
-        .bio-box {
-            border: 1px solid black;
-            box-sizing:border-box;
-            float:left;
+            border-radius: 99px;
+            box-sizing: border-box;
+            color: #fff;
+            display: inline-block;
+            font-family: helvetica, arial, sans;
             font-size: 1rem;
-            margin:40px 1% 0;
-            padding:0 2% 2%;
+            font-weight: bold;
+            height: 2.5em;
+            line-height: 1;
+            padding-top: 0.85em;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            width: 2.5em;
+        }
+
+        .social-list {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .social-list>li {
+            display: inline-block;
+            margin: 0 0.5em;
+        }
+
+        /* Bio styles */
+        .bio-wrapper {
+            background-color: #c0e0c3;
+            font-size: 24px;
+            margin: auto;
+            max-width: 960px;
+            overflow: hidden;
+        }
+
+        .bio-box {
+            border: 1px dashed black;
+            border-color: transparent black  black transparent;
+            box-sizing: border-box;
+            float: left;
+            font-size: 1rem;
+            margin: 40px 1% 0;
+            padding: 0 2% 2%;
             width: 23%;
-            
+
         }
 
         .bio-box h3 {
-            color:#fff;
+            color: #fff;
             font-size: 1.5em;
-            margin:-40px 0 1em;
+            margin: -40px 0 1em;
         }
-        .bio-box > a{
-            color:#c68bf9;
-        }
-        
-        .bio-box img{
-            width:100%;
+
+        .bio-box img {
+            width: 100%;
         }
 
         .bio-copy {
             font-size: 1em;
+            line-height: 1.5;
         }
 
         .bio-copy a {
             color: green;
-            padding:20px;
-
         }
-        .bio-wrapper{
-            background-color: #c0e0c3;
-            font-size:24px;
-           margin:auto;
-           max-width:960px;
-            overflow:hidden;
-            margin: 0 auto 20px;
-        }
-        .bio-wrapper:after{
-            visibility:hidden;
-            display:block;
-            font-size:0;
-            content: " ";
-            clear:both;
-            height:0;
-        }
-        
 
         /* Hero styles */
-        .full-hero{
+        .full-hero {
             background-color: #c7dbfc;
             height: 50vh;
-            
         }
-        .full-hero li{
-            display:inline;
-        }
-       
     </style>
 
 </head>
 
 <body>
     <div class="full-hero hero-home">
-        <h1 >I'm an h1</h1>
+        <h1>I'm an h1</h1>
         <ul class="social-list">
             <li>
                 <a href="https://example.com/" class="social-link">Fb</a>
@@ -134,10 +130,11 @@
                     Known for his dazzling charm, rapier wit, and unrivaled humility
                     Michael is the creator of <a href="https.//www.railstutorial.org">Ruby on Rails Tutorial</a>
                     and principal author of the <a href="https://learnenough.com/">
-                        Learn Enough to Be Dangerous</a> introductory sequence. Michael is also notorious as the founder
-                    of
-                    <a href="https://www.tauday.com">Tau Day</a> and author of the <a
-                        href="https://tauday.com/tau-manifesto"><em>The Tau Manifesto</em></a>,
+                    Learn Enough to Be Dangerous</a> introductory sequence.
+                </p>
+                <p> Michael is also notorious as the founder of
+                    <a href="https://www.tauday.com">Tau Day</a> and author of the 
+                    <a href="https://tauday.com/tau-manifesto"><em>The Tau Manifesto</em></a>,
                     but rumors that he's secretly a supervillain are slightly exaggerated.
                 </p>
             </div>
@@ -178,7 +175,7 @@
             </div>
         </div>
     </div>
-    <p style="clear:left;">
+    <p>
         Learn Enough to Be Dangerous is a leader in de movement to teach the world
         <em>technical sophistication</em>, which includes both "hard skills" like
         coding, command lines, and version control, and "soft skills" like guessing
@@ -187,16 +184,18 @@
     </p>
     <p>
         We believe there are <strong>at least a billion people</strong> who
-        can benefit from learning technical sophistication, probably more. To 
+        can benefit from learning technical sophistication, probably more. To
         join our movement,
         <a href="https://picsum.photos/id/582/400/400">sign up for our official email list</a> now.
     </p>
     <h3>Background</h3>
     <p>
-        Learn Enough to Be Dangerous is an outgrowth of the 
-        <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a> and <a href="https://www.softcover.io/">Softcover publishing platform</a>. 
-        This page is part of the sample site for 
-        <a href="https://learnenough.com/css-tutorial"><em>Learn Enough CSS and Layout to Be Dangerous</em></a>, which teaches the basics of
+        Learn Enough to Be Dangerous is an outgrowth of the
+        <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a> and <a
+            href="https://www.softcover.io/">Softcover publishing platform</a>.
+        This page is part of the sample site for
+        <a href="https://learnenough.com/css-tutorial"><em>Learn Enough CSS and Layout to Be Dangerous</em></a>, which
+        teaches the basics of
         <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets, the language
         that allows web pages to be styled. Other related tutorials cat be found at
         <a href="https://learnenough.com/">learnenough.com</a>.
